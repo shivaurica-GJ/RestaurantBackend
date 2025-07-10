@@ -46,8 +46,8 @@ app.get("/", (req, res) => {
   res.send("API running");
 });
 
-// const menuRoutes = require("./routes/menu");
-// app.use("/api/menu", menuRoutes);
+const menuRoutes = require("./routes/menu");
+app.use("/api/menu", menuRoutes);
 
 // const contactRoutes = require("./routes/contact");
 // app.use("/api/contact", contactRoutes);
