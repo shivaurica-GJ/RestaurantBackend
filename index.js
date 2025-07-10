@@ -13,12 +13,12 @@ const app = express();
 //   })
 // );
 
-// app.use(
-//   cors({
-//     origin: "https://restaurant-frontend-nu-two.vercel.app", // your frontend domain
-//     credentials: true,
-//   })
-// );
+app.use(
+  cors({
+    origin: "https://restaurant-frontend-nu-two.vercel.app", // your frontend domain
+    credentials: true,
+  })
+);
 
 // Handle preflight requests
 // app.options("*", cors());
@@ -46,17 +46,17 @@ app.get("/", (req, res) => {
   res.send("API running");
 });
 
-const menuRoutes = require("./routes/menu");
-app.use("/api/menu", menuRoutes);
+// const menuRoutes = require("./routes/menu");
+// app.use("/api/menu", menuRoutes);
 
-const contactRoutes = require("./routes/contact");
-app.use("/api/contact", contactRoutes);
+// const contactRoutes = require("./routes/contact");
+// app.use("/api/contact", contactRoutes);
 
-const orderRoutes = require("./routes/order");
-const authRoutes = require("./routes/auth");
+// const orderRoutes = require("./routes/order");
+// const authRoutes = require("./routes/auth");
 
-app.use("/api/orders", orderRoutes);
-app.use("/api/auth", authRoutes);
+// app.use("/api/orders", orderRoutes);
+// app.use("/api/auth", authRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, "0.0.0.0", () =>
