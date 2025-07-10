@@ -13,12 +13,12 @@ const app = express();
 //   })
 // );
 
-app.use(
-  cors({
-    origin: "https://restaurant-frontend-nu-two.vercel.app", // your frontend domain
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: "https://restaurant-frontend-nu-two.vercel.app", // your frontend domain
+//     credentials: true,
+//   })
+// );
 
 // Handle preflight requests
 // app.options("*", cors());
