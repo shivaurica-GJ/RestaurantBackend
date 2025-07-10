@@ -49,8 +49,8 @@ app.get("/", (req, res) => {
 const menuRoutes = require("./routes/menu");
 app.use("/api/menu", menuRoutes);
 
-// const contactRoutes = require("./routes/contact");
-// app.use("/api/contact", contactRoutes);
+const contactRoutes = require("./routes/contact");
+app.use("/api/contact", contactRoutes);
 
 const orderRoutes = require("./routes/order");
 const authRoutes = require("./routes/auth");
