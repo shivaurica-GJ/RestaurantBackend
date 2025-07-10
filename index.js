@@ -13,11 +13,12 @@ const app = express();
 //   })
 // );
 
-app.use(cors({
-  origin: "https://project1-sand-seven.vercel.app", // your frontend domain
-  credentials: true
-}));
-
+app.use(
+  cors({
+    origin: "https://restaurant-frontend-nu-two.vercel.app/", // your frontend domain
+    credentials: true,
+  })
+);
 
 // app.use(
 //   cors({
