@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://restaurant-frontend-nu-two.vercel.app", // your frontend domain
+    origin: "https://restaurant-main1.vercel.app", // your frontend domain
     credentials: true,
   })
 );
